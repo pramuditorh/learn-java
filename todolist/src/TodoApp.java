@@ -206,6 +206,16 @@ public class TodoApp {
      * Method menampilkan view menghapus todo dari list
      */
     public static void viewDeleteTodoList() {
+        System.out.println("Hapus TODO");
+        var number = input("Nomor Todo yang dihapus (\"x\" jika ingin membatalkan)");
 
+        if ("x".equals(number)) {
+        } else {
+            boolean success = deleteTodoList(Integer.parseInt(number));
+
+            if (!success) {
+                System.out.println("Gagal mennghapus todo");
+            }
+        }
     }
 }
