@@ -87,14 +87,19 @@ public class TodoApp {
         addTodoList("Satu");
         addTodoList("Dua");
         addTodoList("Tiga");
+        addTodoList("Empat");
+        addTodoList("Lima");
 
         var res = deleteTodoList(20);
         System.out.println(res);
 
-        res = deleteTodoList(5);
+        res = deleteTodoList(7);
         System.out.println(res);
 
         res = deleteTodoList(1);
+        System.out.println(res);
+
+        res = deleteTodoList(2);
         System.out.println(res);
 
         showTodoList();
