@@ -3,7 +3,7 @@ public class TodoApp {
     public static String[] model = new String[10];
 
     public static void main(String[] args) {
-        showTodoList();
+        testShowTodoList();
     }
 
     /**
@@ -14,9 +14,15 @@ public class TodoApp {
             var todo = model[i];
             var no = i + 1;
             if (todo != null) {
-                System.out.println(no + "." + todo);
+                System.out.println(no + ". " + todo);
             }
         }
+    }
+
+    public static void testShowTodoList() {
+        model[0] = "Makan";
+        model[1] = "Minum";
+        showTodoList();
     }
 
     /**
