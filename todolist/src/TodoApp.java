@@ -5,4 +5,25 @@ public class TodoApp {
     public static void main(String[] args) {
         System.out.println("Hello");
     }
+
+    /**
+     * Method untuk menampilkan list todo
+     */
+    public static void showTodoList() {
+
+    }
+
+    /**
+     * Method untuk menambah todo ke list
+     */
+    public static void addTodoList() {
+
+    }
+
+    /**
+     * Method untuk menghapus todo dari list
+     */
+    public static void deleteTodoList() {
+
+    }
 }
