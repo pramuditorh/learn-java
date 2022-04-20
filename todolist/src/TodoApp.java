@@ -3,7 +3,7 @@ public class TodoApp {
     public static String[] model = new String[10];
 
     public static void main(String[] args) {
-        testShowTodoList();
+        testAddTodoList();
     }
 
     /**
@@ -47,7 +47,7 @@ public class TodoApp {
             model = new String[model.length * 2];
 
             // Copy isi dari variable temp kembali ke array model
-            for (int i = 0; i < model.length; i++) {
+            for (int i = 0; i < temp.length; i++) {
                 model[i] = temp[i];
             }
         }
@@ -59,6 +59,14 @@ public class TodoApp {
                 break;
             }
         }
+    }
+
+    public static void testAddTodoList() {
+        for (int i = 0; i < 25; i++) {
+            addTodoList("Todo ke-" + i);
+        }
+
+        showTodoList();
     }
 
     /**
