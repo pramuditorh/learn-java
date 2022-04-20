@@ -7,7 +7,7 @@ public class TodoApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testInput();
+        viewShowTodoList();
     }
 
     /**
@@ -144,7 +144,29 @@ public class TodoApp {
      * Method menampilkan view todo list
      */
     public static void viewShowTodoList() {
+        // Tambahkan label untuk while loop agar bisa di break;
+        // https://stackoverflow.com/questions/22823395/java-how-can-i-break-a-while-loop-under-a-switch-statement
+        showTodoList: while (true) {
+            showTodoList();
 
+            System.out.println("MENU:");
+            System.out.println("1. Tambah data.");
+            System.out.println("2. Hapus data.");
+            System.out.println("x. Keluar.");
+
+            var pilih = input("Pilih");
+            switch (pilih) {
+                case "1":
+                    viewAddTodoList();
+                case "2":
+                    viewDeleteTodoList();
+                case "x":
+                    System.out.println("asdasd");
+                    break showTodoList;
+                default:
+                    System.out.println("Pilihan tidak valid.");
+            }
+        }
     }
 
     /**
