@@ -7,7 +7,7 @@ public class TodoApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testViewShowTodoList();
+        testViewAddTodoList();
     }
 
     /**
@@ -187,12 +187,19 @@ public class TodoApp {
         System.out.println("Tambah TODO");
         var data = input("Todo (\"x\" jika ingin membatalkan)");
 
-        switch (data) {
-            case "x":
-                break;
-            default:
-                addTodoList(data);
+        // Cek jika "x" maka batal
+        if ("x".equals(data)) {
+        } else {
+            addTodoList(data);
         }
+    }
+
+    public static void testViewAddTodoList() {
+        addTodoList("Makan");
+        addTodoList("Minum");
+
+        viewAddTodoList();
+        showTodoList();
     }
 
     /**
