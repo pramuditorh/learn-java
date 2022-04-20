@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class TodoApp {
 
     public static String[] model = new String[10];
+
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         testDeleteTodoList();
@@ -117,6 +121,23 @@ public class TodoApp {
 
         showTodoList();
 
+    }
+
+    /**
+     * Method untuk menerima input user
+     */
+    public static String input(String info) {
+        System.out.print(info + ": ");
+        String inputData = scanner.nextLine();
+        return inputData;
+    }
+
+    public static void testInput() {
+        var name= input("Nama");
+        System.out.println("Hello " + name);
+
+        var balance = input("Saldo anda");
+        System.out.println("Jumlah saldo anda adalah " + balance);
     }
 
     /**
