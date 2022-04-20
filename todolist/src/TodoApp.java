@@ -146,7 +146,7 @@ public class TodoApp {
     public static void viewShowTodoList() {
         // Tambahkan label untuk while loop agar bisa di break;
         // https://stackoverflow.com/questions/22823395/java-how-can-i-break-a-while-loop-under-a-switch-statement
-        showTodoList: while (true) {
+        showTodoListLabel: while (true) {
             showTodoList();
 
             System.out.println("MENU:");
@@ -162,7 +162,7 @@ public class TodoApp {
                     viewDeleteTodoList();
                 case "x":
                     System.out.println("asdasd");
-                    break showTodoList;
+                    break showTodoListLabel;
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
