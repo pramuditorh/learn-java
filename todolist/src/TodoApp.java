@@ -7,7 +7,7 @@ public class TodoApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testViewAddTodoList();
+        testViewDeleteTodoList();
     }
 
     /**
@@ -218,5 +218,14 @@ public class TodoApp {
                 System.out.println("Gagal mennghapus todo");
             }
         }
+    }
+
+    public static void testViewDeleteTodoList() {
+        addTodoList("Makan");
+        addTodoList("Minum");
+
+        showTodoList();
+        viewDeleteTodoList();
+        showTodoList();
     }
 }
