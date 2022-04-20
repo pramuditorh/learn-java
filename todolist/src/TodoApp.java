@@ -28,8 +28,37 @@ public class TodoApp {
     /**
      * Method untuk menambah todo ke list
      */
-    public static void addTodoList() {
+    public static void addTodoList(String todo) {
+        // Cek apakah array model sudah penuh
+        var isFull = true;
+        for (int i = 0; i < model.length; i++) {
+            if (model[i] == null) {
+                isFull = false;
+                break;
+            }
+        }
 
+        // Jika penuh, resize ukuran array model menjadi 2x lipat
+        if (isFull) {
+            // Variable temprary untuk menampung isi array model existing
+            var temp = model;
+
+            // Resize, jika tidak di backup maka data yang sudah diisi sebelumnya akan hilang
+            model = new String[model.length * 2];
+
+            // Copy isi dari variable temp kembali ke array model
+            for (int i = 0; i < model.length; i++) {
+                model[i] = temp[i];
+            }
+        }
+
+        // Tambahkan data ke posisi array yang masih NULL
+        for (var i = 0; i < model.length; i++) {
+            if (model[i] == null) {
+                model[i] = todo;
+                break;
+            }
+        }
     }
 
     /**
