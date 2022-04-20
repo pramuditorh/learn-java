@@ -7,7 +7,7 @@ public class TodoApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testDeleteTodoList();
+        testInput();
     }
 
     /**
