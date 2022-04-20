@@ -184,7 +184,15 @@ public class TodoApp {
      * Method menampilkan view menambahkan todo ke list
      */
     public static void viewAddTodoList() {
+        System.out.println("Tambah TODO");
+        var data = input("Todo (\"x\" jika ingin membatalkan)");
 
+        switch (data) {
+            case "x":
+                break;
+            default:
+                addTodoList(data);
+        }
     }
 
     /**
