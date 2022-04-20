@@ -72,8 +72,15 @@ public class TodoApp {
     /**
      * Method untuk menghapus todo dari list
      */
-    public static void deleteTodoList() {
-
+    public static boolean deleteTodoList(int number) {
+        if ((number - 1) >= model.length) {
+            return false;
+        } else if (model[number - 1] == null) {
+            return false;
+        } else {
+            model[number] = null;
+            return true;
+        }
     }
 
     /**
