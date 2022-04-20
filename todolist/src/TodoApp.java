@@ -3,7 +3,7 @@ public class TodoApp {
     public static String[] model = new String[10];
 
     public static void main(String[] args) {
-        testAddTodoList();
+        testDeleteTodoList();
     }
 
     /**
@@ -81,6 +81,24 @@ public class TodoApp {
             model[number] = null;
             return true;
         }
+    }
+
+    public static void testDeleteTodoList() {
+        addTodoList("Satu");
+        addTodoList("Dua");
+        addTodoList("Tiga");
+
+        var res = deleteTodoList(20);
+        System.out.println(res);
+
+        res = deleteTodoList(5);
+        System.out.println(res);
+
+        res = deleteTodoList(1);
+        System.out.println(res);
+
+        showTodoList();
+
     }
 
     /**
