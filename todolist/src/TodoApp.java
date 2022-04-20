@@ -7,13 +7,14 @@ public class TodoApp {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        viewShowTodoList();
+        testViewShowTodoList();
     }
 
     /**
      * Method untuk menampilkan list todo
      */
     public static void showTodoList() {
+        System.out.println("To Do List:");
         for (var i = 0; i < model.length; i++) {
             var todo = model[i];
             var no = i + 1;
@@ -158,15 +159,25 @@ public class TodoApp {
             switch (pilih) {
                 case "1":
                     viewAddTodoList();
+                    break;
                 case "2":
                     viewDeleteTodoList();
+                    break;
                 case "x":
-                    System.out.println("asdasd");
                     break showTodoListLabel;
                 default:
                     System.out.println("Pilihan tidak valid.");
             }
         }
+    }
+
+    public static void testViewShowTodoList() {
+        addTodoList("Makan");
+        addTodoList("Minum");
+        addTodoList("Olahraga");
+        addTodoList("Bekerja");
+
+        viewShowTodoList();
     }
 
     /**
