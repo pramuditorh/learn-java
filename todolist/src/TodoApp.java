@@ -73,12 +73,25 @@ public class TodoApp {
      * Method untuk menghapus todo dari list
      */
     public static boolean deleteTodoList(int number) {
+        // Cek apakah index data yang akan dihapus lebih besar sama dengan panjang array nya
         if ((number - 1) >= model.length) {
             return false;
-        } else if (model[number - 1] == null) {
+        }
+        // Cek apakah data yang akan dihapus bernilai null
+        else if (model[number - 1] == null) {
             return false;
         } else {
-            model[number - 1] = null;
+            // Perulangan untuk menggeser data yang dihapus ke paling ujung kanan (index paling besar)
+            for (int i = (number - 1); i < model.length; i++) {
+                // Cek apakah index paling kanan, ubah data menjadi null
+                if (i == (model.length - 1)) {
+                    model[i] = null;
+                }
+                // Tukar data index sekarang dengan data index selanjutnya
+                else {
+                    model[i] = model[i + 1];
+                }
+            }
             return true;
         }
     }
