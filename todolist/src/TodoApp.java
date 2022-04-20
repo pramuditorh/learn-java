@@ -78,7 +78,7 @@ public class TodoApp {
         } else if (model[number - 1] == null) {
             return false;
         } else {
-            model[number] = null;
+            model[number - 1] = null;
             return true;
         }
     }
