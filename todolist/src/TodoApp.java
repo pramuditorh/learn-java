@@ -211,6 +211,7 @@ public class TodoApp {
 
         if ("x".equals(number)) {
         } else {
+            // Konversi string ke integer
             boolean success = deleteTodoList(Integer.parseInt(number));
 
             if (!success) {
