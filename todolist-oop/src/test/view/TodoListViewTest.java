@@ -48,5 +48,6 @@ public class TodoListViewTest {
         todoListView.removeTodoList();
 
         todoListService.showTodoList();
+        todoListView.removeTodoList();
     }
 }
