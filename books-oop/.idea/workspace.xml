@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c376334-b07f-4442-b971-c195e80bd9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books-oop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/BookRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/service/BookServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/view/BookViewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/InputUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/BookView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/BookRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/BookRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/BookService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/21059700/learning/learn-java/books-oop",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.BookApp">
+    <configuration name="BookApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BookApp" />
+      <module name="books-oop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.service.BookServiceTest" />
+      <module name="books-oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookViewTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.view.BookViewTest" />
+      <module name="books-oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BookApp" />
+        <item itemvalue="Application.BookViewTest" />
+        <item itemvalue="Application.BookServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,5 +115,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

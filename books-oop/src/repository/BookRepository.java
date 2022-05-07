@@ -5,7 +5,7 @@ import entity.Book;
 public interface BookRepository {
     Book[] getAll();
 
-    void add();
+    void add(Book book);
 
-    boolean remove();
+    boolean remove(Integer number);
 }
